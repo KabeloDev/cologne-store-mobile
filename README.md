@@ -50,6 +50,14 @@ Profile page: <br/>
 <img src="https://i.imgur.com/3hFUXtt.png" height="80%" width="80%" />
 <br />
 <br />
+API: <br/>
+<img src="https://i.imgur.com/AgpOSEs.png" height="80%" width="80%" />
+<br />
+<br />
+JSON: <br/>
+<img src="https://i.imgur.com/ZX91Pe8.png" height="80%" width="80%" />
+<br />
+<br />
 
 
 
