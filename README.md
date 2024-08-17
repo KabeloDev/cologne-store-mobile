@@ -1,4 +1,4 @@
-<h1>Cologne store app</h1>
+<h1>Cologne mobile store app</h1>
 
  ### [YouTube Demonstration](https://youtu.be/YAsllDmLOdI)
 
