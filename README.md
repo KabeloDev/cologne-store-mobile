@@ -22,16 +22,16 @@ Cologne store made using Flutter and Firebase. This app allows users to view col
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Home page: <br/>
-<img src="https://i.imgur.com/tZKZ1Kk.png" height="80%" width="80%" />
-<br />
-<br />
 Login page: <br/>
 <img src="https://i.imgur.com/AqiRACG.png" height="80%" width="80%" />
 <br />
 <br />
 Register page: <br/>
 <img src="https://i.imgur.com/rlIVryH.png" height="80%" width="80%" />
+<br />
+<br />
+Home page: <br/>
+<img src="https://i.imgur.com/tZKZ1Kk.png" height="80%" width="80%" />
 <br />
 <br />
 Colognes page: <br/>
