@@ -1,9 +1,9 @@
 <h1>Cologne mobile store app</h1>
 
- ### [YouTube Demonstration](https://youtu.be/YAsllDmLOdI)
+ ### [YouTube Demonstration](https://youtu.be/UHWdbANa-Xc)
 
 <h2>Description</h2>
-Cologne store made using Flutter and Firebase. This app allows users to view colognes, add them to a cart, checkout and view their orders.
+Cologne store made using Flutter and ASP.NET Core for the backend, with a Firebase database. The application allows users to view colognes, add them to a cart and make orders. It also allows users to update personal information in their profile, view their orders, look at reviews by other users and add their own review
 <br />
 
 
