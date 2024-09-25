@@ -32,27 +32,35 @@ Register page: <br/>
 <br />
 <br />
 Home page: <br/>
-<img src="https://i.imgur.com/tZKZ1Kk.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/8hWj2Ea.png" height="80%" width="80%" />
 <br />
 <br />
 Colognes page: <br/>
-<img src="https://i.imgur.com/uxMEYvp.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/qgLTITu.png" height="80%" width="80%" />
 <br />
 <br />
 Cart page: <br/>
-<img src="https://i.imgur.com/scpMP0S.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/LngcTWF.png" height="80%" width="80%" />
 <br />
 <br />
 Checkout page: <br/>
-<img src="https://i.imgur.com/XtgTpyP.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/ZlLPHAO.png" height="80%" width="80%" />
 <br />
 <br />
-Orders page: <br/>
-<img src="https://i.imgur.com/8Xcypal.png" height="80%" width="80%" />
+Order details page: <br/>
+<img src="https://i.imgur.com/4amca4W.png" height="80%" width="80%" />
 <br />
 <br />
 Profile page: <br/>
-<img src="https://i.imgur.com/3hFUXtt.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/vmpPtFo.png" height="80%" width="80%" />
+<br />
+<br />
+Reviews page: <br/>
+<img src="https://i.imgur.com/qE7yGRw.png" height="80%" width="80%" />
+<br />
+<br />
+Add review page: <br/>
+<img src="https://i.imgur.com/5nnGeJR.png" height="80%" width="80%" />
 <br />
 <br />
 Firebase: <br/>
