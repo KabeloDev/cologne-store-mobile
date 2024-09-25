@@ -11,6 +11,7 @@ Cologne store made using Flutter and Firebase. This app allows users to view col
 
 - <b>Flutter</b>
 - <b>Firebase</b>
+- <b>ASP.NET Core</b>
 - <b>ASP.NET Core web API</b>
 
 <h2>Environments Used </h2>
