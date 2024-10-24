@@ -11,7 +11,6 @@ This app is built using Flutter, with a robust backend powered by ASP.NET Core a
 
 - <b>Flutter</b>
 - <b>Firebase</b>
-- <b>ASP.NET Core MVC</b>
 - <b>ASP.NET Core web API</b>
 
 <h2>Environments Used </h2>
