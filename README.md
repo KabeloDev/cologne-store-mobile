@@ -3,7 +3,7 @@
  ### [YouTube Demonstration](https://youtu.be/Orhp5ytjPsk)
 
 <h2>Description</h2>
-Cologne store made using Flutter and ASP.NET Core for the backend, with a Firebase database. The application allows users to view colognes, add them to a cart and make orders. It also allows users to update personal information in their profile, view their orders, look at reviews by other users and add their own review
+This app is built using Flutter, with a robust backend powered by ASP.NET Core and a Firebase database. Users can browse a curated selection of colognes, add items to their cart, and place orders seamlessly. The app also allows users to manage their profiles, track their orders, and read and write reviews.
 <br />
 
 
@@ -11,7 +11,7 @@ Cologne store made using Flutter and ASP.NET Core for the backend, with a Fireba
 
 - <b>Flutter</b>
 - <b>Firebase</b>
-- <b>ASP.NET Core</b>
+- <b>ASP.NET Core MVC</b>
 - <b>ASP.NET Core web API</b>
 
 <h2>Environments Used </h2>
@@ -24,43 +24,51 @@ Cologne store made using Flutter and ASP.NET Core for the backend, with a Fireba
 
 <p align="center">
 Login page: <br/>
-<img src="https://i.imgur.com/AqiRACG.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/ep0gDRh.png" height="80%" width="80%" />
 <br />
 <br />
 Register page: <br/>
-<img src="https://i.imgur.com/rlIVryH.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/U8Tn5Ff.png" height="80%" width="80%" />
 <br />
 <br />
 Home page: <br/>
-<img src="https://i.imgur.com/8hWj2Ea.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/WzDz8ew.png" height="80%" width="80%" />
 <br />
 <br />
-Colognes page: <br/>
-<img src="https://i.imgur.com/qgLTITu.png" height="80%" width="80%" />
+Products page: <br/>
+<img src="https://i.imgur.com/Hi9idVQ.png" height="80%" width="80%" />
+<br />
+<br />
+Specials page: <br/>
+<img src="https://i.imgur.com/hijwT0x.png" height="80%" width="80%" />
 <br />
 <br />
 Cart page: <br/>
-<img src="https://i.imgur.com/LngcTWF.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/QvliU7W.png" height="80%" width="80%" />
 <br />
 <br />
 Checkout page: <br/>
-<img src="https://i.imgur.com/ZlLPHAO.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/hc1LQgT.png" height="80%" width="80%" />
+<br />
+<br />
+Payment page: <br/>
+<img src="https://i.imgur.com/vQyYv64.png" height="80%" width="80%" />
 <br />
 <br />
 Order details page: <br/>
-<img src="https://i.imgur.com/4amca4W.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/HJXdjul.png" height="80%" width="80%" />
 <br />
 <br />
 Profile page: <br/>
-<img src="https://i.imgur.com/vmpPtFo.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/4dOQRGn.png" height="80%" width="80%" />
 <br />
 <br />
 Reviews page: <br/>
-<img src="https://i.imgur.com/qE7yGRw.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/tTRvulK.png" height="80%" width="80%" />
 <br />
 <br />
 Add review page: <br/>
-<img src="https://i.imgur.com/5nnGeJR.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/bbCj5Xw.png" height="80%" width="80%" />
 <br />
 <br />
 Firebase: <br/>
