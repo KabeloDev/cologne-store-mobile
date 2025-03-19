@@ -9,7 +9,7 @@ void main() async{
  
    await Firebase.initializeApp(
     options: const FirebaseOptions(
-      apiKey: "AIzaSyDDk5n5lcVpECM77Qr2xHcSRUsuxF906Hw", 
+      apiKey: "", 
       appId: "1:643912346356:android:c855afb900a259c9588ca1", 
       messagingSenderId: "643912346356", 
       projectId: "cologne-store")
