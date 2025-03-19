@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "643912346356",
+    "firebase_url": "https://cologne-store-default-rtdb.firebaseio.com",
+    "project_id": "cologne-store",
+    "storage_bucket": "cologne-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643912346356:android:c855afb900a259c9588ca1",
+        "android_client_info": {
+          "package_name": "com.example.cologne_store_mobile_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDk5n5lcVpECM77Qr2xHcSRUsuxF906Hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
