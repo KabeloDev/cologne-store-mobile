@@ -23,51 +23,55 @@ This app is built using Flutter, with a robust backend powered by ASP.NET Core a
 
 <p align="center">
 Login page: <br/>
-<img src="https://i.imgur.com/ep0gDRh.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/2l89DvC.png" height="80%" width="80%" />
 <br />
 <br />
 Register page: <br/>
-<img src="https://i.imgur.com/U8Tn5Ff.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/YDSsjpi.png" height="80%" width="80%" />
 <br />
 <br />
 Home page: <br/>
-<img src="https://i.imgur.com/WzDz8ew.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/v8baXyr.png" height="80%" width="80%" />
+<br />
+<br />
+Drawer: <br/>
+<img src="https://i.imgur.com/RYEGsWp.png" height="80%" width="80%" />
 <br />
 <br />
 Products page: <br/>
-<img src="https://i.imgur.com/Hi9idVQ.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/S7X07FC.png" height="80%" width="80%" />
 <br />
 <br />
 Specials page: <br/>
-<img src="https://i.imgur.com/hijwT0x.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/7vtCACg.png" height="80%" width="80%" />
 <br />
 <br />
 Cart page: <br/>
-<img src="https://i.imgur.com/QvliU7W.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/iPOff2s.png" height="80%" width="80%" />
 <br />
 <br />
 Checkout page: <br/>
-<img src="https://i.imgur.com/hc1LQgT.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/4FomhEZ.png" height="80%" width="80%" />
 <br />
 <br />
 Payment page: <br/>
-<img src="https://i.imgur.com/vQyYv64.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/c3ur2Kf.png" height="80%" width="80%" />
 <br />
 <br />
 Order details page: <br/>
-<img src="https://i.imgur.com/HJXdjul.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/R5NITCO.png" height="80%" width="80%" />
 <br />
 <br />
 Profile page: <br/>
-<img src="https://i.imgur.com/4dOQRGn.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/wOFkqXk.png" height="80%" width="80%" />
 <br />
 <br />
 Reviews page: <br/>
-<img src="https://i.imgur.com/tTRvulK.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/KxQVRMZ.png" height="80%" width="80%" />
 <br />
 <br />
 Add review page: <br/>
-<img src="https://i.imgur.com/bbCj5Xw.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/lTWGtJy.png" height="80%" width="80%" />
 <br />
 <br />
 Firebase: <br/>
