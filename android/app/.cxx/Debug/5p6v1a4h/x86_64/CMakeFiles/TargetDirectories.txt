@@ -1,0 +1,2 @@
+C:/Users/Kabelo/Downloads/WIL - Alpha complete/WIL - Alpha/Cologne Store mobile/cologne_store_mobile_app/android/app/.cxx/Debug/5p6v1a4h/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/Kabelo/Downloads/WIL - Alpha complete/WIL - Alpha/Cologne Store mobile/cologne_store_mobile_app/android/app/.cxx/Debug/5p6v1a4h/x86_64/CMakeFiles/rebuild_cache.dir

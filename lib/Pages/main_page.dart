@@ -134,211 +134,202 @@ class _MyMainPage extends State<MainPage> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          child: Column(
-            children: [
-              const SizedBox(height: 20),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 29, 29, 29),
-                  minimumSize: const Size(350, 120),
-                  shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))),
+      body: Column(
+        children: [
+          const SizedBox(height: 20),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 29, 29, 29),
+              minimumSize: const Size(350, 120),
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(15))),
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Specials(),
                 ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Specials(),
-                    ),
-                  );
-                },
-                child: Animate(
-                  effects: const [FadeEffect(), ScaleEffect()],
-                  child: const Text(
-                    'Click Me See What\'s on SALE!!!!',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 87, 87, 87),
-                        fontSize: 17,
-                        fontWeight: FontWeight.bold),
-                  )
-                      .animate()
-                      .fade(duration: 2000.ms)
-                      .slideY(curve: Curves.easeIn),
-                ),
-              ),
-              const SizedBox(height: 30),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text("Products",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 30)),
-                    PopupMenuButton<String>(
-                      onSelected: (String result) {
-                        setState(() {
-                          _sortOption = result;
-                        });
-                      },
-                      itemBuilder: (BuildContext context) => [
-                        const PopupMenuItem(
-                            value: 'price_asc',
-                            child: Text('Price: Low to High')),
-                        const PopupMenuItem(
-                            value: 'price_desc',
-                            child: Text('Price: High to Low')),
-                        const PopupMenuItem(
-                            value: 'brand', child: Text('Sort by Type')),
-                      ],
-                    ),
+              );
+            },
+            child: Animate(
+              effects: const [FadeEffect(), ScaleEffect()],
+              child: const Text(
+                'Click Me See What\'s on SALE!!!!',
+                style: TextStyle(
+                    color: Color.fromARGB(255, 87, 87, 87),
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold),
+              )
+                  .animate()
+                  .fade(duration: 2000.ms)
+                  .slideY(curve: Curves.easeIn),
+            ),
+          ),
+          const SizedBox(height: 30),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text("Products",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
+                PopupMenuButton<String>(
+                  onSelected: (String result) {
+                    setState(() {
+                      _sortOption = result;
+                    });
+                  },
+                  itemBuilder: (BuildContext context) => [
+                    const PopupMenuItem(
+                        value: 'price_asc',
+                        child: Text('Price: Low to High')),
+                    const PopupMenuItem(
+                        value: 'price_desc',
+                        child: Text('Price: High to Low')),
+                    const PopupMenuItem(
+                        value: 'brand', child: Text('Sort by Type')),
                   ],
                 ),
-              ),
-              const SizedBox(height: 15),
-              Consumer<EmailProvider>(
-                builder: (context, value, child) => Container(
-                  decoration: const BoxDecoration(),
-                  child: StreamBuilder<QuerySnapshot>(
-                    stream: FirebaseFirestore.instance
-                        .collection('Colognes')
-                        .snapshots(),
-                    builder: (context, snapshot) {
-                      if (snapshot.connectionState == ConnectionState.waiting) {
-                        return Center(child: CircularProgressIndicator());
-                      }
-                      if (snapshot.hasError) {
-                        return Center(child: Text('Error: ${snapshot.error}'));
-                      }
+              ],
+            ),
+          ),
+          const SizedBox(height: 15),
+          Consumer<EmailProvider>(
+            builder: (context, value, child) => Expanded(
+              child: StreamBuilder<QuerySnapshot>(
+                stream: FirebaseFirestore.instance
+                    .collection('Colognes')
+                    .snapshots(),
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return Center(child: CircularProgressIndicator());
+                  }
+                  if (snapshot.hasError) {
+                    return Center(child: Text('Error: ${snapshot.error}'));
+                  }
 
-                      final colognes =
-                          snapshot.data?.docs.reversed.toList() ?? [];
-                      _sortColognes(colognes);
-                      return GridView.builder(
-                        scrollDirection: Axis.vertical,
-                        shrinkWrap: true,
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount:
-                                    2, // Change this to set the number of columns
-                                childAspectRatio:
-                                    0.6, // Adjust this ratio for item sizing
-                                crossAxisSpacing: 3,
-                                mainAxisSpacing: 3),
-                        itemCount: colognes.length,
-                        itemBuilder: (context, index) {
-                          final cologne = colognes[index];
-                          return Padding(
-                            padding: const EdgeInsets.all(15),
-                            child: Card(
-                              color: const Color.fromRGBO(242, 255, 244, 1),
-                              elevation: 10,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Image.network(
-                                    '${cologne['image']}',
-                                    height: 100,
-                                    width: 100,
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text(cologne['name'],
-                                        style: const TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20),
-                                        textAlign: TextAlign.center),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 8.0),
-                                    child: Column(
+                  final colognes =
+                      snapshot.data?.docs.reversed.toList() ?? [];
+                  _sortColognes(colognes);
+                  return GridView.builder(
+                    scrollDirection: Axis.vertical,
+                    shrinkWrap: true,
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2, // Change this to set the number of columns
+                            childAspectRatio: 0.6, // Adjust this ratio for item sizing
+                            crossAxisSpacing: 3,
+                            mainAxisSpacing: 3),
+                    itemCount: colognes.length,
+                    itemBuilder: (context, index) {
+                      final cologne = colognes[index];
+                      return Padding(
+                        padding: const EdgeInsets.all(15),
+                        child: Card(
+                          color: const Color.fromRGBO(242, 255, 244, 1),
+                          elevation: 10,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Image.network(
+                                '${cologne['image']}',
+                                height: 100,
+                                width: 100,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(cologne['name'],
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20),
+                                    textAlign: TextAlign.center),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 8.0),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      '${cologne['brand']}',
+                                      textAlign: TextAlign.center,
+                                    ),
+                                    const SizedBox(
+                                      height: 7,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
                                       children: [
                                         Text(
-                                          '${cologne['brand']}',
-                                          textAlign: TextAlign.center,
+                                          'R${cologne['price']}',
+                                          style: const TextStyle(fontSize: 16),
                                         ),
                                         const SizedBox(
-                                          height: 7,
+                                          width: 20,
                                         ),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Text(
-                                              'R${cologne['price']}',
-                                              style:
-                                                  const TextStyle(fontSize: 16),
+                                        Container(
+                                          height: 30,
+                                          width: 30,
+                                          decoration: BoxDecoration(
+                                            color: const Color.fromARGB(
+                                                255, 33, 33, 33),
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                          ),
+                                          child: IconButton(
+                                            icon: const Icon(
+                                              Icons.add_shopping_cart,
+                                              color: Colors.white,
+                                              size: 16,
                                             ),
-                                            const SizedBox(
-                                              width: 20,
-                                            ),
-                                            Container(
-                                              height: 30,
-                                              width: 30,
-                                              decoration: BoxDecoration(
-                                                color: const Color.fromARGB(
-                                                    255, 33, 33, 33),
-                                                borderRadius:
-                                                    BorderRadius.circular(50),
-                                              ),
-                                              child: IconButton(
-                                                icon: const Icon(
-                                                  Icons.add_shopping_cart,
-                                                  color: Colors.white,
-                                                  size: 16,
-                                                ),
-                                                onPressed: () async {
-                                                  String id = FirebaseFirestore
-                                                      .instance
-                                                      .collection('Cart')
-                                                      .doc()
-                                                      .id;
-                                                  await FirebaseFirestore
-                                                      .instance
-                                                      .collection('Cart')
-                                                      .doc(id)
-                                                      .set(
-                                                    {
-                                                      "name": cologne['name'],
-                                                      "brand": cologne['brand'],
-                                                      "price": cologne['price'],
-                                                      "email": value.userEmail,
-                                                      "image": cologne['image'],
-                                                      "id": id
-                                                    },
-                                                  );
-                                                  ScaffoldMessenger.of(context)
-                                                      .showSnackBar(
-                                                    const SnackBar(
-                                                      content: Text(
-                                                          "Item added to cart"),
-                                                    ),
-                                                  );
+                                            onPressed: () async {
+                                              String id = FirebaseFirestore
+                                                  .instance
+                                                  .collection('Cart')
+                                                  .doc()
+                                                  .id;
+                                              await FirebaseFirestore
+                                                  .instance
+                                                  .collection('Cart')
+                                                  .doc(id)
+                                                  .set(
+                                                {
+                                                  "name": cologne['name'],
+                                                  "brand": cologne['brand'],
+                                                  "price": cologne['price'],
+                                                  "email": value.userEmail,
+                                                  "image": cologne['image'],
+                                                  "id": id
                                                 },
-                                              ),
-                                            ),
-                                          ],
-                                        )
+                                              );
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                const SnackBar(
+                                                  content: Text(
+                                                      "Item added to cart"),
+                                                ),
+                                              );
+                                            },
+                                          ),
+                                        ),
                                       ],
-                                    ),
-                                  ),
-                                ],
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                          );
-                        },
+                            ],
+                          ),
+                        ),
                       );
                     },
-                  ),
-                ),
+                  );
+                },
               ),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

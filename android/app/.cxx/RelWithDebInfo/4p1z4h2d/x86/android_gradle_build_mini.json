@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "C:\\FlutterSdk\\flutter\\packages\\flutter_tools\\gradle\\src\\main\\groovy\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\Kabelo\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\Kabelo\\Downloads\\WIL - Alpha complete\\WIL - Alpha\\Cologne Store mobile\\cologne_store_mobile_app\\android\\app\\.cxx\\RelWithDebInfo\\4p1z4h2d\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\Kabelo\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\Kabelo\\Downloads\\WIL - Alpha complete\\WIL - Alpha\\Cologne Store mobile\\cologne_store_mobile_app\\android\\app\\.cxx\\RelWithDebInfo\\4p1z4h2d\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

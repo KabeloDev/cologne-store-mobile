@@ -4,25 +4,29 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
- 
-   await Firebase.initializeApp(
-    options: const FirebaseOptions(
-      apiKey: "", 
-      appId: "1:643912346356:android:c855afb900a259c9588ca1", 
-      messagingSenderId: "643912346356", 
-      projectId: "cologne-store")
-  );
- 
- 
+
+  // Only initialize Firebase if it hasn't been initialized already
+  try {
+    await Firebase.initializeApp(
+      options: const FirebaseOptions(
+        apiKey: "AIzaSyA816pW9OKpzEaFCfryvZIgiiVIy5G5z5c",
+        appId: "1:643912346356:android:c855afb900a259c9588ca1",
+        messagingSenderId: "643912346356",
+        projectId: "cologne-store",
+      ),
+    );
+  } catch (e) {
+    print('Firebase already initialized');
+  }
+
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
@@ -34,4 +38,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

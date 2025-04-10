@@ -36,11 +36,11 @@ class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 102, 182, 116),
+      backgroundColor: const Color.fromARGB(255, 225, 225, 225),
       appBar: AppBar(
         title: const Text("Cart"),
         centerTitle: true,
-        backgroundColor: Colors.transparent,
+        backgroundColor: const Color.fromARGB(255, 102, 182, 116),
         foregroundColor: Colors.white,
       ),
       bottomNavigationBar: Consumer<EmailProvider>(

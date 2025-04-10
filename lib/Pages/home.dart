@@ -159,10 +159,28 @@ class _HomeState extends State<Home> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Image.network(
-                  "https://media.giphy.com/media/5n01MiDbS2oi61sE4X/giphy.gif?cid=ecf05e47nq28td2vgy51jbg5zx30u2ypsxfxvvjrknsrw96o&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+                  "https://www.jomalone.co.za/media/export/cms/Merch_Updates/giftforhim_desk.jpg",
                 ).animate().fade(duration: 2000.ms).scale(),
               ),
               const SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.network(
+                  "https://www.jomalone.co.uk/media/export/cms/landing_page/gifting/Autumn_Colognes_Gifting_750x480_DT.jpg",
+                ).animate().fade(duration: 2000.ms).scale(),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+  'Step into a world of elegance and allure.\nEach fragrance we offer tells a story, leaving a lasting impression wherever you go.',
+  textAlign: TextAlign.center,
+),
+const SizedBox(height: 15),
+const Text(
+  'Indulge in Luxury, Indulge in Montreal Odör.',
+  style: TextStyle(
+      fontStyle: FontStyle.italic, fontWeight: FontWeight.w800),
+),
+
             ],
           ),
         ),
